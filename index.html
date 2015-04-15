@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Effective JavaScript: Frogger</title>
+    </head>
+    <body>
+		<div id="overlay"></div>
+		<div id="msgBox">
+			<div>
+				<div id="msgBoxHead"></div>
+				<div id="msgBoxBody"></div>
+				<div id="msgBoxFoot"></div>
+			</div>
+		</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2" style="margin-top:170px;width:220px;">
+					<form id="spriteSelector">
+						<label>
+							<input type="radio" id="buttonSprite" name="buttonSprite" value="char-boy.png" width="1px" checked style="visibility:hidden;">
+							<img src="images/char-boy-a.png" width="85" height="80" alt="Boy" border>
+						</label><br>
+						<label>
+							<input type="radio" id="buttonSprite" name="buttonSprite" value="char-cat-girl.png" style="visibility:hidden;">
+							<img src="images/char-cat-girl-a.png" width="85" height="80" alt="Cat Girl">
+						</label><br>
+						<label>
+							<input type="radio" id="buttonSprite" name="buttonSprite" value="char-horn-girl.png" style="visibility:hidden;">
+							<img src="images/char-horn-girl-a.png" width="85" height="80" alt="Horn Girl">
+						</label><br>
+						<label>
+							<input type="radio" id="buttonSprite" name="buttonSprite" value="char-pink-girl.png"  style="visibility:hidden;">
+							<img src="images/char-pink-girl-a.png" width="85" height="80" alt="Pink Girl">
+						</label><br>
+						<label>
+							<input type="radio" id="buttonSprite" name="buttonSprite" value="char-princess-girl.png"  style="visibility:hidden;">
+							<img src="images/char-princess-girl-a.png" width="85" height="80" alt="Princess Girl"><br>
+						</label>
+					</form>
+					<br>
+					<span style="font-size;10px;font-style:italic;">Select one of the above Sprites to start the game<br><br>
+					Use the keyboard arrows to move up down or side to side<br><br>
+					Run into a bug and lose a life!</span>
+				</div>
+				<div class="col-md-8" style="width:640px;">
+					<div class="row">
+						<div class="col-md-12">
+							<span class="text-center" style="padding-top:30px;font-family:Comic Sans MS; font-size:50px; font-weight:bold;">Bug Runner</span>
+						</div>
+					</div>
+				<span id="count" style="font-family:Comic Sans MS; font-size:20px;padding-top:30px;"></span>
+					<div id="canvasDiv" class="center-content"></div>
+				</div>
+			</div>
+		</div>
+	<script src="js/resources.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/engine.js"></script>
+    </body>
+</html>
